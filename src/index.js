@@ -1,1 +1,1 @@
-console.log( 'Loaded' );
+console.log( 'Gutenberg Times loaded!' );
