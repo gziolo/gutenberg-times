@@ -1,0 +1,15 @@
+{
+  "name": "gutenberg-times",
+  "version": "1.0.0",
+  "description": "Live Coding for the Block Editor.",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "gziolo",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "3.1.0"
+  }
+}
