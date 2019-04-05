@@ -1,8 +1,10 @@
 # Gutenberg Times
 
-Live Coding for the Block Editor:
+Live Coding for the WordPress Block Editor.
 
-https://twitter.com/gutenbergtimes/status/1111767160836247552
+Demo: **Adding Formatting Buttons to the RichText Component** (April 4th, 2019):
+
+https://www.youtube.com/watch?v=sIk9y-yCGt8
 
 This repository was bootstrapped based on tutorials from Gutenberg Handbook:
 - [Getting Started with JavaScript](https://wordpress.org/gutenberg/handbook/designers-developers/developers/tutorials/javascript/)
