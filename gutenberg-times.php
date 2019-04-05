@@ -7,7 +7,13 @@ function gutenberg_times_enqueue() {
 	wp_enqueue_script(
 		'gutenberg_times-script',
 		plugins_url( 'build/index.js', __FILE__ ),
-		array(),
+		array(
+			'wp-block-editor',
+			'wp-compose',
+			'wp-data',
+			'wp-format-library',
+			'wp-rich-text',
+		),
 		time()
 	);
 }
