@@ -11,7 +11,7 @@ function gutenberg_times_enqueue() {
 			'wp-block-editor',
 			'wp-compose',
 			'wp-data',
-			'wp-format-library',
+			'wp-format-library', // necessary for correct load order allowing to override Bold control
 			'wp-rich-text',
 		),
 		time()
