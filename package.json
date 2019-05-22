@@ -10,6 +10,6 @@
   "author": "gziolo",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@wordpress/scripts": "3.1.0"
+    "@wordpress/scripts": "3.2.1"
   }
 }
