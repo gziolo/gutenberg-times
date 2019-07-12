@@ -1,7 +1,7 @@
 const { RichTextToolbarButton } = wp.blockEditor;
 const { compose, ifCondition } = wp.compose;
 const { withSelect } = wp.data;
-const { applyFormat, getActiveFormat, registerFormatType, removeFormat, unregisterFormatType } = wp.richText;
+const { applyFormat, registerFormatType, removeFormat, unregisterFormatType } = wp.richText;
 
 // Bold controls on Pullquote block only.
 const { name, edit, ...bold } = unregisterFormatType( 'core/bold' );
@@ -11,7 +11,7 @@ const PullquoteOnlyEdit = compose( [
 		const { getSelectedBlock } = select( 'core/block-editor' );
 		return {
 			selectedBlock: getSelectedBlock(),
-		}
+		};
 	} ),
 	ifCondition(
 		( { selectedBlock } ) =>
@@ -39,7 +39,7 @@ registerFormatType( name, {
 				type: textColorFormatName,
 				attributes: {
 					style: `color: ${ color }`,
-				}
+				},
 			} ) );
 		};
 
