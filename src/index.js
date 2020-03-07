@@ -1,7 +1,15 @@
-const { RichTextToolbarButton } = wp.blockEditor;
-const { compose, ifCondition } = wp.compose;
-const { withSelect } = wp.data;
-const { applyFormat, registerFormatType, removeFormat, unregisterFormatType } = wp.richText;
+import { RichTextToolbarButton } from '@wordpress/block-editor';
+import { compose, ifCondition } from '@wordpress/compose';
+import { withSelect } from '@wordpress/data';
+import {
+	applyFormat,
+	registerFormatType,
+	removeFormat,
+	unregisterFormatType,
+} from '@wordpress/rich-text';
+
+// Necessary for correct load order allowing to override Bold control.
+import '@wordpress/format-library';
 
 // Bold controls on Pullquote block only.
 const { name, edit, ...bold } = unregisterFormatType( 'core/bold' );
@@ -35,12 +43,14 @@ registerFormatType( name, {
 				return;
 			}
 
-			onChange( applyFormat( value, {
-				type: textColorFormatName,
-				attributes: {
-					style: `color: ${ color }`,
-				},
-			} ) );
+			onChange(
+				applyFormat( value, {
+					type: textColorFormatName,
+					attributes: {
+						style: `color: ${ color }`,
+					},
+				} )
+			);
 		};
 
 		return (

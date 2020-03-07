@@ -6,11 +6,12 @@
   "scripts": {
     "start": "wp-scripts start",
     "build": "wp-scripts build",
-    "lint-js": "wp-scripts lint-js"
+    "format:js": "wp-scripts format-js",
+    "lint:js": "wp-scripts lint-js"
   },
   "author": "gziolo",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@wordpress/scripts": "3.3.0"
+    "@wordpress/scripts": "7.1.2"
   }
 }
